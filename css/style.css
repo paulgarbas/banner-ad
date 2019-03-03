@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("fonts/myriad-pro-regular.eot");
+  src: url("fonts/myriad-pro-regular.eot?#iefix") format("embedded-opentype"), url("fonts/myriad-pro-regular.woff2") format("woff2"), url("fonts/myriad-pro-regular.woff") format("woff"), url("fonts/myriad-pro-regular.otf") format("opentype"), url("fonts/myriad-pro-regular.ttf") format("truetype"); }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container {
+  width: 782px;
+  min-height: 300px;
+  background: #333;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.container__top {
+  margin: 0 6px 0 5px;
+  padding: 6px 0 7px 0;
+  border-bottom: 1px solid #797977; }
+
+.container__logo {
+  font-family: "Myriad Pro";
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container__imdb-icon {
+  width: 100px;
+  height: 61px;
+  margin-right: 12px; }
+
+.container__movies-icon {
+  width: 43px;
+  height: 44px;
+  margin: 0 16px 0 23px; }
+
+.container__logo-movies {
+  text-transform: uppercase; }
+
+.container__bottom {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  position: absolute;
+  right: 0;
+  padding-top: 17px;
+  overflow-x: auto; }
+
+.container__bottom--mobile {
+  display: none; }
+
+.container__movies {
+  display: flex;
+  width: 782px; }
+
+.container__movie {
+  width: 50%;
+  height: 100%;
+  padding-bottom: 7px; }
+
+.container__movie:first-child {
+  padding-left: 15px;
+  padding-right: 20px;
+  border-right: 1px solid #797977; }
+
+.container__movie:last-child {
+  padding-left: 20px;
+  padding-right: 15px; }
+
+.container__movie-top {
+  display: flex;
+  height: 94px; }
+
+.container__movie-img {
+  position: relative;
+  width: 145px;
+  margin-right: 13px;
+  border: 2px solid #fff;
+  overflow: hidden; }
+
+.container__movie-img img {
+  width: 100%;
+  position: relative;
+  top: -20px; }
+
+.container__movie-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.container__movie-title {
+  max-width: 160px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #fff;
+  margin: 6px 0 0 0; }
+
+.container__movie-genre {
+  font-size: 11px;
+  font-weight: 400;
+  color: #aec7d5;
+  text-transform: uppercase;
+  padding-bottom: 11px;
+  margin: 0; }
+
+.container__movie-btn {
+  display: inline-block;
+  width: 70px;
+  height: 21px;
+  border-radius: 2px;
+  background: #bebeba;
+  font-size: 11px;
+  line-height: 19px;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center; }
+
+.container__movie-btn img {
+  margin: 0 7px 0 8px; }
+
+.container__movie-bottom {
+  display: flex;
+  margin-top: 8px; }
+
+.container__movie-rating {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 55px;
+  border-right: 1px dotted #5c5f61;
+  padding-right: 10px;
+  margin-right: 14px; }
+
+.container__movie-star {
+  margin-right: 5px;
+  width: 30px;
+  height: 28px; }
+
+.container__movie-star img {
+  width: 100%;
+  height: 100%; }
+
+.container__movie-number {
+  font-family: "Myriad Pro";
+  font-size: 24px;
+  line-height: 26px;
+  color: #fff; }
+
+.container__movie-description {
+  width: 259px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #b1c4d0; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+.container__scrollbar {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  margin: 0 6px 0 5px;
+  height: 15px; }
+
+.container__scrollbar-btn {
+  display: flex;
+  align-items: center;
+  width: 22px;
+  height: 100%;
+  background: #bebeba; }
+
+.container__scrollbar-btn--left {
+  border-radius: 7px 0 0 7px;
+  padding-left: 6px; }
+
+.container__scrollbar-btn--right {
+  border-radius: 0 7px 7px 0;
+  padding-left: 7px; }
+
+.container__scrollbar-arrow-left {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4.5px 9px 4.5px 0;
+  border-color: transparent #8a8484 transparent transparent; }
+
+.container__scrollbar-arrow-right {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4.5px 0 4.5px 9px;
+  border-color: transparent transparent transparent #8a8484; }
+
+.container__scrollbar-track {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background: #bebeba;
+  flex-grow: 1; }
+
+.container__scrollbar-thumb {
+  position: absolute;
+  width: 82px;
+  height: 13px;
+  border-radius: 13px;
+  background: #8a8484; }
+
+.container__dots {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  margin: 0 6px 0 5px; }
+
+.container__dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fff; }
+
+.container__dot + .container__dot {
+  margin-left: 8px; }
+
+@media (min-width: 361px) and (max-width: 650px) {
+  .container__movie-top {
+    flex-direction: column;
+    align-items: center;
+    height: unset; }
+  .container__movie-img {
+    margin: 0;
+    height: 100px; }
+  .container__movie-info {
+    align-items: center; }
+  .container__movie-title {
+    margin-top: 12px; }
+  .container__movie-genre {
+    padding-top: 10px;
+    text-align: center; }
+  .container__movie-btn {
+    margin: 0 auto; }
+  .container__movie-bottom {
+    flex-direction: column; }
+  .container__movie-rating {
+    padding: 0;
+    margin: 0;
+    border-right: none;
+    justify-content: center; }
+  .container__movie-description {
+    width: unset; } }
+
+@media (max-width: 550px) {
+  .container__top {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85); } }
+
+@media (max-width: 460px) {
+  .container__top {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75); } }
+
+@media (max-width: 400px) {
+  .container__top {
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65); } }
+
+@media (max-width: 360px) {
+  .container__bottom--desktop {
+    display: none; }
+  .container__bottom--mobile {
+    display: flex; }
+  .container__top {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6); }
+  .container__movie,
+  .container__movie:first-child,
+  .container__movie:last-child {
+    padding: 0 20px 7px 20px; }
+  .container__movie-title {
+    font-size: 16px; }
+  .container__scrollbar {
+    display: none; }
+  .container__dots {
+    display: flex; } }
